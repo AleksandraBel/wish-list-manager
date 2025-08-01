@@ -15,7 +15,7 @@ const Login = () => {
 
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate("/dashboard");
+      navigate("/wishlist");
     } catch (err) {
       setError("Невірний email або пароль.");
     }
